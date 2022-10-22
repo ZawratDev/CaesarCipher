@@ -1,7 +1,7 @@
 package com.theodinproject.top_projects;
 
 
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class CaesarCipherEncryptor {
     public static void main(String[] args) {
@@ -10,11 +10,17 @@ public class CaesarCipherEncryptor {
 
         String CAPITALIZED_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-        String testString = "krystian";
+//        String TEST_STRING = "NaKtoraMajaPrzyjscGoscie";
 
-        int numOfChars = testString.length();
+        Scanner scanner = new Scanner(System.in);
 
-        char[] textToArray = testString.toCharArray();
+        System.out.println("Please provide a text using camelCase and without special characters: ");
+
+        String userText = scanner.nextLine();
+
+        int numOfChars = userText.length();
+
+        char[] textToArray = userText.toCharArray();
 
         int alphabetOriginLetterIndex;
 
@@ -22,13 +28,13 @@ public class CaesarCipherEncryptor {
 
         char charFromOriginStringIndex;
 
-        System.out.println(testString.length());
+        System.out.println("User text lenght: " + userText.length());
 
         for (int i = 0; i < numOfChars; i++) {
 
             System.out.println("Iteration: " + i);
 
-            charFromOriginStringIndex = testString.charAt(i);
+            charFromOriginStringIndex = userText.charAt(i);
 
             System.out.println("charFromOriginStringIndex = " + charFromOriginStringIndex);
 
@@ -37,18 +43,43 @@ public class CaesarCipherEncryptor {
                     nextLetter = ALPHABET.charAt(23);
                     textToArray[i] = nextLetter;
                 }
+
+                case 'A' -> {
+                    nextLetter = CAPITALIZED_ALPHABET.charAt(23);
+                    textToArray[i] = nextLetter;
+                }
+
                 case 'b' -> {
                     nextLetter = ALPHABET.charAt(24);
                     textToArray[i] = nextLetter;
                 }
+
+                case 'B' -> {
+                    nextLetter = CAPITALIZED_ALPHABET.charAt(24);
+                    textToArray[i] = nextLetter;
+                }
+
                 case 'c' -> {
                     nextLetter = ALPHABET.charAt(25);
                     textToArray[i] = nextLetter;
                 }
+
+                case 'C' -> {
+                    nextLetter = CAPITALIZED_ALPHABET.charAt(25);
+                    textToArray[i] = nextLetter;
+                }
+
                 default -> {
-                    alphabetOriginLetterIndex = ALPHABET.indexOf(charFromOriginStringIndex);
-                    System.out.println("alphabetOriginLetterIndex = " + alphabetOriginLetterIndex);
-                    nextLetter = ALPHABET.charAt(alphabetOriginLetterIndex - 3);
+                    if (Character.isUpperCase(charFromOriginStringIndex)) {
+                        alphabetOriginLetterIndex = CAPITALIZED_ALPHABET.indexOf(charFromOriginStringIndex);
+                        System.out.println("Capitalized_alphabetOriginLetterIndex = " + alphabetOriginLetterIndex);
+                        nextLetter = CAPITALIZED_ALPHABET.charAt(alphabetOriginLetterIndex - 3);
+                    }
+                    else {
+                        alphabetOriginLetterIndex = ALPHABET.indexOf(charFromOriginStringIndex);
+                        System.out.println("alphabetOriginLetterIndex = " + alphabetOriginLetterIndex);
+                        nextLetter = ALPHABET.charAt(alphabetOriginLetterIndex - 3);
+                    }
                     textToArray[i] = nextLetter;
                 }
             }
