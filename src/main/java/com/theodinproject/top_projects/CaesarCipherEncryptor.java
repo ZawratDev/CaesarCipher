@@ -39,6 +39,7 @@ public class CaesarCipherEncryptor {
             System.out.println("charFromOriginStringIndex = " + charFromOriginStringIndex);
 
             switch (charFromOriginStringIndex) {
+
                 case 'a' -> {
                     nextLetter = ALPHABET.charAt(23);
                     textToArray[i] = nextLetter;
@@ -70,20 +71,31 @@ public class CaesarCipherEncryptor {
                 }
 
                 default -> {
+
                     if (Character.isUpperCase(charFromOriginStringIndex)) {
+
                         alphabetOriginLetterIndex = CAPITALIZED_ALPHABET.indexOf(charFromOriginStringIndex);
+
                         System.out.println("Capitalized_alphabetOriginLetterIndex = " + alphabetOriginLetterIndex);
+
                         nextLetter = CAPITALIZED_ALPHABET.charAt(alphabetOriginLetterIndex - 3);
                     }
+
                     else {
+
                         alphabetOriginLetterIndex = ALPHABET.indexOf(charFromOriginStringIndex);
+
                         System.out.println("alphabetOriginLetterIndex = " + alphabetOriginLetterIndex);
+
                         nextLetter = ALPHABET.charAt(alphabetOriginLetterIndex - 3);
                     }
+
                     textToArray[i] = nextLetter;
+
                 }
             }
             System.out.println("Encrypted text: ");
+
             System.out.println(textToArray);
         }
     }
