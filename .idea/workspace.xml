@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93abebbb-b891-4b7f-bc15-7c5a4471a5dc" name="Changes" comment="CaesarCipher.java class has been renamed to CaesarCipherEncryptor.java&#10;Fixed switch statement to break after the statement after case is true.&#10;Added some test sout's to see how the mechanism works.&#10;The CaesarCipherEncryptor now works with a test string written with lowercase." />
+    <list default="true" id="93abebbb-b891-4b7f-bc15-7c5a4471a5dc" name="Changes" comment="CaesarCipher.java class has been renamed to CaesarCipherEncryptor.java&#10;Fixed switch statement to break after the statement after case is true.&#10;Added some test sout's to see how the mechanism works.&#10;The CaesarCipherEncryptor now works with a test string written with lowercase.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/CaesarCipherEncryptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/CaesarCipherEncryptor.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

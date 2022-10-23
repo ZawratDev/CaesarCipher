@@ -9,8 +9,12 @@ public class CaesarCipherEncryptor {
         String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
 
         String CAPITALIZED_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        
+        String SPECIAL_CHARACTERS = " !@#$%^&*()-_=+[]{};:'\"\\|,.<>/?`~";
 
-//        String TEST_STRING = "NaKtoraMajaPrzyjscGoscie";
+        String NUMBERS = "0123456789";
+
+//        String TEST_STRING = "NaKtoraMajaPrzyjscGoscie"; use this for testing
 
         Scanner scanner = new Scanner(System.in);
 
@@ -28,15 +32,15 @@ public class CaesarCipherEncryptor {
 
         char charFromOriginStringIndex;
 
-        System.out.println("User text lenght: " + userText.length());
+        System.out.println("[LOG]: User text length: " + userText.length() + "\n");
 
         for (int i = 0; i < numOfChars; i++) {
 
-            System.out.println("Iteration: " + i);
+            System.out.println("[LOG]: Iteration: " + i + "\n");
 
             charFromOriginStringIndex = userText.charAt(i);
 
-            System.out.println("charFromOriginStringIndex = " + charFromOriginStringIndex);
+            System.out.println("[LOG]: charFromOriginStringIndex = " + charFromOriginStringIndex + "\n");
 
             switch (charFromOriginStringIndex) {
 
@@ -70,22 +74,34 @@ public class CaesarCipherEncryptor {
                     textToArray[i] = nextLetter;
                 }
 
+//                case (' ') -> {
+//                    nextLetter = ' ';
+//                    textToArray[i] = nextLetter;
+//                }
+
                 default -> {
 
                     if (Character.isUpperCase(charFromOriginStringIndex)) {
 
                         alphabetOriginLetterIndex = CAPITALIZED_ALPHABET.indexOf(charFromOriginStringIndex);
 
-                        System.out.println("Capitalized_alphabetOriginLetterIndex = " + alphabetOriginLetterIndex);
+                        System.out.println("[LOG]: Capitalized_alphabetOriginLetterIndex = " + alphabetOriginLetterIndex + "\n");
 
                         nextLetter = CAPITALIZED_ALPHABET.charAt(alphabetOriginLetterIndex - 3);
-                    }
 
+                    } else if (SPECIAL_CHARACTERS.indexOf(charFromOriginStringIndex) != -1) {
+
+                        nextLetter = charFromOriginStringIndex;
+
+                    } else if (NUMBERS.indexOf(charFromOriginStringIndex) != -1) {
+
+                        nextLetter = charFromOriginStringIndex;
+                    }
                     else {
 
                         alphabetOriginLetterIndex = ALPHABET.indexOf(charFromOriginStringIndex);
 
-                        System.out.println("alphabetOriginLetterIndex = " + alphabetOriginLetterIndex);
+                        System.out.println("[LOG]: alphabetOriginLetterIndex = " + alphabetOriginLetterIndex + "\n");
 
                         nextLetter = ALPHABET.charAt(alphabetOriginLetterIndex - 3);
                     }
