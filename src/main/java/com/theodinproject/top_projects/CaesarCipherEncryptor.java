@@ -14,8 +14,6 @@ public class CaesarCipherEncryptor {
 
         String NUMBERS = "0123456789";
 
-//        String TEST_STRING = "NaKtoraMajaPrzyjscGoscie"; use this for testing
-
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Please provide a text using camelCase and without special characters: ");
@@ -74,11 +72,6 @@ public class CaesarCipherEncryptor {
                     textToArray[i] = nextLetter;
                 }
 
-//                case (' ') -> {
-//                    nextLetter = ' ';
-//                    textToArray[i] = nextLetter;
-//                }
-
                 default -> {
 
                     if (Character.isUpperCase(charFromOriginStringIndex)) {
@@ -96,14 +89,21 @@ public class CaesarCipherEncryptor {
                     } else if (NUMBERS.indexOf(charFromOriginStringIndex) != -1) {
 
                         nextLetter = charFromOriginStringIndex;
-                    }
-                    else {
+
+                    } else if (ALPHABET.indexOf(charFromOriginStringIndex) != -1) {
 
                         alphabetOriginLetterIndex = ALPHABET.indexOf(charFromOriginStringIndex);
 
                         System.out.println("[LOG]: alphabetOriginLetterIndex = " + alphabetOriginLetterIndex + "\n");
 
                         nextLetter = ALPHABET.charAt(alphabetOriginLetterIndex - 3);
+
+                    } else {
+
+                        System.out.println("The encrypting cannot be done fully. Please refactor your text!");
+
+                        break;
+
                     }
 
                     textToArray[i] = nextLetter;

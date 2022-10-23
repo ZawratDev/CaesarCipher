@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93abebbb-b891-4b7f-bc15-7c5a4471a5dc" name="Changes" comment="CaesarCipher.java class has been renamed to CaesarCipherEncryptor.java&#10;Fixed switch statement to break after the statement after case is true.&#10;Added some test sout's to see how the mechanism works.&#10;The CaesarCipherEncryptor now works with a test string written with lowercase.">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="93abebbb-b891-4b7f-bc15-7c5a4471a5dc" name="Changes" comment="Updated the default class in the pom.xml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/CaesarCipherEncryptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/CaesarCipherEncryptor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666301099637</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated the default class in the pom.xml">
+      <created>1666558152987</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666558152987</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,7 +111,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CaesarCipher.java class has been renamed to CaesarCipherEncryptor.java&#10;Fixed switch statement to break after the statement after case is true.&#10;Added some test sout's to see how the mechanism works.&#10;The CaesarCipherEncryptor now works with a test string written with lowercase." />
-    <option name="LAST_COMMIT_MESSAGE" value="CaesarCipher.java class has been renamed to CaesarCipherEncryptor.java&#10;Fixed switch statement to break after the statement after case is true.&#10;Added some test sout's to see how the mechanism works.&#10;The CaesarCipherEncryptor now works with a test string written with lowercase." />
+    <MESSAGE value="Updated the default class in the pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the default class in the pom.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
