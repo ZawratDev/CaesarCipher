@@ -9,14 +9,10 @@ public class CaesarCipherEncryptor {
         String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
 
         String CAPITALIZED_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        
-        String SPECIAL_CHARACTERS = " !@#$%^&*()-_=+[]{};:'\"\\|,.<>/?`~";
-
-        String NUMBERS = "0123456789";
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please provide a text using camelCase and without special characters: ");
+        System.out.println("Please provide a text to encrypt: ");
 
         String userText = scanner.nextLine();
 
@@ -81,14 +77,6 @@ public class CaesarCipherEncryptor {
                         System.out.println("[LOG]: Capitalized_alphabetOriginLetterIndex = " + alphabetOriginLetterIndex + "\n");
 
                         nextLetter = CAPITALIZED_ALPHABET.charAt(alphabetOriginLetterIndex - 3);
-
-                    } else if (SPECIAL_CHARACTERS.indexOf(charFromOriginStringIndex) != -1) {
-
-                        nextLetter = charFromOriginStringIndex;
-
-                    } else if (NUMBERS.indexOf(charFromOriginStringIndex) != -1) {
-
-                        nextLetter = charFromOriginStringIndex;
 
                     } else if (ALPHABET.indexOf(charFromOriginStringIndex) != -1) {
 

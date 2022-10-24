@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93abebbb-b891-4b7f-bc15-7c5a4471a5dc" name="Changes" comment="Updated the default class in the pom.xml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/CaesarCipherEncryptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/CaesarCipherEncryptor.java" afterDir="false" />
-    </list>
+    <list default="true" id="93abebbb-b891-4b7f-bc15-7c5a4471a5dc" name="Changes" comment="Added a functionality, that prevents running into an exception if a user uses a tab into input." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666558152987</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added a functionality, that prevents running into an exception if a user uses a tab into input.">
+      <created>1666558648114</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666558648114</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,7 +116,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CaesarCipher.java class has been renamed to CaesarCipherEncryptor.java&#10;Fixed switch statement to break after the statement after case is true.&#10;Added some test sout's to see how the mechanism works.&#10;The CaesarCipherEncryptor now works with a test string written with lowercase." />
     <MESSAGE value="Updated the default class in the pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the default class in the pom.xml" />
+    <MESSAGE value="Added a functionality, that prevents running into an exception if a user uses a tab into input." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a functionality, that prevents running into an exception if a user uses a tab into input." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
