@@ -1,8 +1,6 @@
 package com.theodinproject.top_projects;
 
 
-import java.util.Scanner;
-
 public class Decryptor {
 
     static void decrypt(String sentence) {
@@ -10,10 +8,6 @@ public class Decryptor {
         final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
 
         final String CAPITALIZED_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-//        String decryptedText;
-
-//        System.out.println("Please provide a text to encrypt: ");
 
         int numOfChars = sentence.length();
 
@@ -25,15 +19,15 @@ public class Decryptor {
 
         char charFromOriginStringIndex;
 
-        System.out.println("[LOG]: User text length: " + sentence.length() + "\n");
+        System.out.println("[LOG -> INFO]: User text length: " + sentence.length() + "\n");
 
         for (int i = 0; i < numOfChars; i++) {
 
-            System.out.println("[LOG]: Iteration: " + i + "\n");
+            System.out.println("[LOG -> INFO]: Iteration: " + i + "\n");
 
             charFromOriginStringIndex = sentence.charAt(i);
 
-            System.out.println("[LOG]: charFromOriginStringIndex = " + charFromOriginStringIndex + "\n");
+            System.out.println("[LOG -> INFO]: charFromOriginStringIndex = " + charFromOriginStringIndex + "\n");
 
             switch (charFromOriginStringIndex) {
 
@@ -73,7 +67,7 @@ public class Decryptor {
 
                         alphabetOriginLetterIndex = CAPITALIZED_ALPHABET.indexOf(charFromOriginStringIndex);
 
-                        System.out.println("[LOG]: Capitalized_alphabetOriginLetterIndex = " + alphabetOriginLetterIndex + "\n");
+                        System.out.println("[LOG -> INFO]: Capitalized_alphabetOriginLetterIndex = " + alphabetOriginLetterIndex + "\n");
 
                         nextLetter = CAPITALIZED_ALPHABET.charAt(alphabetOriginLetterIndex + 3);
 
@@ -81,13 +75,13 @@ public class Decryptor {
 
                         alphabetOriginLetterIndex = ALPHABET.indexOf(charFromOriginStringIndex);
 
-                        System.out.println("[LOG]: alphabetOriginLetterIndex = " + alphabetOriginLetterIndex + "\n");
+                        System.out.println("[LOG -> INFO]: alphabetOriginLetterIndex = " + alphabetOriginLetterIndex + "\n");
 
                         nextLetter = ALPHABET.charAt(alphabetOriginLetterIndex + 3);
 
                     } else {
 
-                        System.out.println("The decrypting cannot be done fully. Please refactor your text!");
+                        System.out.println("[LOG -> WARN]: Special characters will not be decrypted!");
 
                         break;
 
@@ -97,8 +91,11 @@ public class Decryptor {
 
                 }
             }
+
             System.out.println("Decrypted text: ");
+
             System.out.println(textToArray);
+
         }
     }
 }
