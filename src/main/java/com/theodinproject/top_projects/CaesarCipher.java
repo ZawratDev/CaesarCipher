@@ -3,7 +3,7 @@ package com.theodinproject.top_projects;
 
 import java.util.Scanner;
 
-public class CaesarCipherEncryptor {
+public class CaesarCipher {
     public static void main(String[] args) {
 
         String userText;

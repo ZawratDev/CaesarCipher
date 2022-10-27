@@ -67,7 +67,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.theodinproject.top_projects/com.theodinproject.top_projects.CaesarCipherEncryptor
+                                com.theodinproject.top_projects/com.theodinproject.top_projects.CaesarCipher
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

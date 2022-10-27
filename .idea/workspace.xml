@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93abebbb-b891-4b7f-bc15-7c5a4471a5dc" name="Changes" comment="Added a class called CaesarCipherDecryptor.java which is coded to decrypt already encrypted text by the CaesarCipherEncryptor.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/Decryptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/Encryptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/CaesarCipherEncryptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/CaesarCipherEncryptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/CaesarCipherDecryptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/CaesarCipherEncryptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/CaesarCipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/theodinproject/top_projects/hello-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +69,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CaesarCipherDecryptor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.theodinproject.top_projects.CaesarCipherDecryptor" />
+    <configuration name="CaesarCipher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.theodinproject.top_projects.CaesarCipher" />
       <module name="top_projects" />
       <extension name="coverage">
         <pattern>
@@ -82,8 +82,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CaesarCipherEncryptor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.theodinproject.top_projects.CaesarCipherEncryptor" />
+    <configuration name="CaesarCipherDecryptor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.theodinproject.top_projects.CaesarCipherDecryptor" />
       <module name="top_projects" />
       <extension name="coverage">
         <pattern>
