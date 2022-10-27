@@ -1,24 +1,17 @@
 package com.theodinproject.top_projects;
 
 
-import java.util.Scanner;
+public class Decryptor {
 
-public class CaesarCipherDecryptor {
-    public static void main(String[] args) {
+    static void decrypt(String sentence) {
 
-        String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
+        final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
 
-        String CAPITALIZED_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        final String CAPITALIZED_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-        Scanner scanner = new Scanner(System.in);
+        int numOfChars = sentence.length();
 
-        System.out.println("Please provide a text to decrypt: ");
-
-        String userText = scanner.nextLine();
-
-        int numOfChars = userText.length();
-
-        char[] textToArray = userText.toCharArray();
+        char[] textToArray = sentence.toCharArray();
 
         int alphabetOriginLetterIndex;
 
@@ -26,15 +19,15 @@ public class CaesarCipherDecryptor {
 
         char charFromOriginStringIndex;
 
-        System.out.println("[LOG]: User text length: " + userText.length() + "\n");
+        System.out.println("[LOG -> INFO]: User text length: " + sentence.length() + "\n");
 
         for (int i = 0; i < numOfChars; i++) {
 
-            System.out.println("[LOG]: Iteration: " + i + "\n");
+            System.out.println("[LOG -> INFO]: Iteration: " + i + "\n");
 
-            charFromOriginStringIndex = userText.charAt(i);
+            charFromOriginStringIndex = sentence.charAt(i);
 
-            System.out.println("[LOG]: charFromOriginStringIndex = " + charFromOriginStringIndex + "\n");
+            System.out.println("[LOG -> INFO]: charFromOriginStringIndex = " + charFromOriginStringIndex + "\n");
 
             switch (charFromOriginStringIndex) {
 
@@ -74,7 +67,7 @@ public class CaesarCipherDecryptor {
 
                         alphabetOriginLetterIndex = CAPITALIZED_ALPHABET.indexOf(charFromOriginStringIndex);
 
-                        System.out.println("[LOG]: Capitalized_alphabetOriginLetterIndex = " + alphabetOriginLetterIndex + "\n");
+                        System.out.println("[LOG -> INFO]: Capitalized_alphabetOriginLetterIndex = " + alphabetOriginLetterIndex + "\n");
 
                         nextLetter = CAPITALIZED_ALPHABET.charAt(alphabetOriginLetterIndex + 3);
 
@@ -82,13 +75,13 @@ public class CaesarCipherDecryptor {
 
                         alphabetOriginLetterIndex = ALPHABET.indexOf(charFromOriginStringIndex);
 
-                        System.out.println("[LOG]: alphabetOriginLetterIndex = " + alphabetOriginLetterIndex + "\n");
+                        System.out.println("[LOG -> INFO]: alphabetOriginLetterIndex = " + alphabetOriginLetterIndex + "\n");
 
                         nextLetter = ALPHABET.charAt(alphabetOriginLetterIndex + 3);
 
                     } else {
 
-                        System.out.println("The encrypting cannot be done fully. Please refactor your text!");
+                        System.out.println("[LOG -> WARN]: Special characters will not be decrypted!");
 
                         break;
 
@@ -98,9 +91,11 @@ public class CaesarCipherDecryptor {
 
                 }
             }
-            System.out.println("Encrypted text: ");
+
+            System.out.println("Decrypted text: ");
 
             System.out.println(textToArray);
+
         }
     }
 }
