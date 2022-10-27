@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93abebbb-b891-4b7f-bc15-7c5a4471a5dc" name="Changes" comment="Added a functionality, that prevents running into an exception if a user uses a tab into input." />
+    <list default="true" id="93abebbb-b891-4b7f-bc15-7c5a4471a5dc" name="Changes" comment="Added a class called CaesarCipherDecryptor.java which is coded to decrypt already encrypted text by the CaesarCipherEncryptor.java">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/Decryptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/Encryptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/CaesarCipherEncryptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/CaesarCipherEncryptor.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,10 +45,17 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/zawrat/Pobrane/Event_Sounds_3233.jar&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.CaesarCipherDecryptor">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.theodinproject.top_projects" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CaesarCipherEncryptor">
     <configuration name="CaesarCipher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.theodinproject.top_projects.CaesarCipher" />
       <module name="top_projects" />
@@ -84,8 +97,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CaesarCipherDecryptor" />
         <item itemvalue="Application.CaesarCipherEncryptor" />
+        <item itemvalue="Application.CaesarCipherDecryptor" />
         <item itemvalue="Application.CaesarCipher" />
       </list>
     </recent_temporary>
@@ -120,7 +133,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666558648114</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Removed unnecessary if statements, now the code is cleaner without losing functionality.">
+      <created>1666642537404</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666642537404</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added a class called CaesarCipherDecryptor.java which is coded to decrypt already encrypted text by the CaesarCipherEncryptor.java">
+      <created>1666644085695</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666644085695</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,7 +165,9 @@
     <MESSAGE value="CaesarCipher.java class has been renamed to CaesarCipherEncryptor.java&#10;Fixed switch statement to break after the statement after case is true.&#10;Added some test sout's to see how the mechanism works.&#10;The CaesarCipherEncryptor now works with a test string written with lowercase." />
     <MESSAGE value="Updated the default class in the pom.xml" />
     <MESSAGE value="Added a functionality, that prevents running into an exception if a user uses a tab into input." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a functionality, that prevents running into an exception if a user uses a tab into input." />
+    <MESSAGE value="Removed unnecessary if statements, now the code is cleaner without losing functionality." />
+    <MESSAGE value="Added a class called CaesarCipherDecryptor.java which is coded to decrypt already encrypted text by the CaesarCipherEncryptor.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a class called CaesarCipherDecryptor.java which is coded to decrypt already encrypted text by the CaesarCipherEncryptor.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
