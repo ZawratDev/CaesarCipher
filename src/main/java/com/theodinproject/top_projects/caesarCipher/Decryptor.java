@@ -1,9 +1,9 @@
-package com.theodinproject.top_projects;
+package com.theodinproject.top_projects.caesarCipher;
 
 
-public class Encryptor {
+public class Decryptor {
 
-    static void encrypt(String sentence) {
+    static void decrypt(String sentence) {
 
         final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
 
@@ -31,33 +31,33 @@ public class Encryptor {
 
             switch (charFromOriginStringIndex) {
 
-                case 'a' -> {
-                    nextLetter = ALPHABET.charAt(23);
+                case 'x' -> {
+                    nextLetter = ALPHABET.charAt(0);
                     textToArray[i] = nextLetter;
                 }
 
-                case 'A' -> {
-                    nextLetter = CAPITALIZED_ALPHABET.charAt(23);
+                case 'X' -> {
+                    nextLetter = CAPITALIZED_ALPHABET.charAt(0);
                     textToArray[i] = nextLetter;
                 }
 
-                case 'b' -> {
-                    nextLetter = ALPHABET.charAt(24);
+                case 'y' -> {
+                    nextLetter = ALPHABET.charAt(1);
                     textToArray[i] = nextLetter;
                 }
 
-                case 'B' -> {
-                    nextLetter = CAPITALIZED_ALPHABET.charAt(24);
+                case 'Y' -> {
+                    nextLetter = CAPITALIZED_ALPHABET.charAt(1);
                     textToArray[i] = nextLetter;
                 }
 
-                case 'c' -> {
-                    nextLetter = ALPHABET.charAt(25);
+                case 'z' -> {
+                    nextLetter = ALPHABET.charAt(2);
                     textToArray[i] = nextLetter;
                 }
 
-                case 'C' -> {
-                    nextLetter = CAPITALIZED_ALPHABET.charAt(25);
+                case 'Z' -> {
+                    nextLetter = CAPITALIZED_ALPHABET.charAt(2);
                     textToArray[i] = nextLetter;
                 }
 
@@ -69,7 +69,7 @@ public class Encryptor {
 
                         System.out.println("[LOG -> INFO]: Capitalized_alphabetOriginLetterIndex = " + alphabetOriginLetterIndex + "\n");
 
-                        nextLetter = CAPITALIZED_ALPHABET.charAt(alphabetOriginLetterIndex - 3);
+                        nextLetter = CAPITALIZED_ALPHABET.charAt(alphabetOriginLetterIndex + 3);
 
                     } else if (ALPHABET.indexOf(charFromOriginStringIndex) != -1) {
 
@@ -77,11 +77,11 @@ public class Encryptor {
 
                         System.out.println("[LOG -> INFO]: alphabetOriginLetterIndex = " + alphabetOriginLetterIndex + "\n");
 
-                        nextLetter = ALPHABET.charAt(alphabetOriginLetterIndex - 3);
+                        nextLetter = ALPHABET.charAt(alphabetOriginLetterIndex + 3);
 
                     } else {
 
-                        System.out.println("[LOG -> WARN]: Special characters will not be encrypted!");
+                        System.out.println("[LOG -> WARN]: Special characters will not be decrypted!");
 
                         break;
 
@@ -92,7 +92,7 @@ public class Encryptor {
                 }
             }
 
-            System.out.println("Encrypted text: ");
+            System.out.println("Decrypted text: ");
 
             System.out.println(textToArray);
 

@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93abebbb-b891-4b7f-bc15-7c5a4471a5dc" name="Changes" comment="Added a class called CaesarCipherDecryptor.java which is coded to decrypt already encrypted text by the CaesarCipherEncryptor.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/substrings/Substrings.java" afterDir="false" />
+    <list default="true" id="93abebbb-b891-4b7f-bc15-7c5a4471a5dc" name="Changes" comment="The small projects (CaesarCipher and Substrings) are now into correct packages.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/CaesarCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/caesarCipher/CaesarCipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/Decryptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/caesarCipher/Decryptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/Encryptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/caesarCipher/Encryptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,11 +63,11 @@
   </component>
   <component name="RunManager" selected="Application.Substrings">
     <configuration name="CaesarCipher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.theodinproject.top_projects.CaesarCipher" />
+      <option name="MAIN_CLASS_NAME" value="com.theodinproject.top_projects.caesarCipher.CaesarCipher" />
       <module name="top_projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.theodinproject.top_projects.*" />
+          <option name="PATTERN" value="com.theodinproject.top_projects.caesarCipher.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,7 +80,7 @@
       <module name="top_projects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.theodinproject.top_projects.*" />
+          <option name="PATTERN" value="com.theodinproject.top_projects.caesarCipher.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -182,7 +186,8 @@
     <MESSAGE value="Added a functionality, that prevents running into an exception if a user uses a tab into input." />
     <MESSAGE value="Removed unnecessary if statements, now the code is cleaner without losing functionality." />
     <MESSAGE value="Added a class called CaesarCipherDecryptor.java which is coded to decrypt already encrypted text by the CaesarCipherEncryptor.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a class called CaesarCipherDecryptor.java which is coded to decrypt already encrypted text by the CaesarCipherEncryptor.java" />
+    <MESSAGE value="The small projects (CaesarCipher and Substrings) are now into correct packages." />
+    <option name="LAST_COMMIT_MESSAGE" value="The small projects (CaesarCipher and Substrings) are now into correct packages." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

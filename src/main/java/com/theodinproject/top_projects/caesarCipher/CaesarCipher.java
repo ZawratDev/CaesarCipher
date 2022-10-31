@@ -1,4 +1,4 @@
-package com.theodinproject.top_projects;
+package com.theodinproject.top_projects.caesarCipher;
 
 
 import java.util.Scanner;
