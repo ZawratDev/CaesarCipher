@@ -1,12 +1,11 @@
 package com.theodinproject.top_projects.substrings;
 
-import java.util.ArrayList;
+
 import java.util.Arrays;
 import java.util.HashMap;
 
 public class Substrings {
 
-    static int count = 0;
 
     public static void main(String[] args) {
 
@@ -19,7 +18,7 @@ public class Substrings {
 
         System.out.println("INFO: findMeAsArray: " + Arrays.toString(findMeAsArray));
 
-        HashMap<String, Integer> foundWords = new HashMap<String, Integer>();
+        HashMap<String, Integer> foundWords = new HashMap<>();
 
         int dictionaryLength = dictionary.length - 1;
         int findMeAsArrayLength = findMeAsArray.length - 1;
