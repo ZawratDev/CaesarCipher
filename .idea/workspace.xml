@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93abebbb-b891-4b7f-bc15-7c5a4471a5dc" name="Changes" comment="The small projects (CaesarCipher and Substrings) are now into correct packages.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/CaesarCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/caesarCipher/CaesarCipher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/Decryptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/caesarCipher/Decryptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/Encryptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/caesarCipher/Encryptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-    </list>
+    <list default="true" id="93abebbb-b891-4b7f-bc15-7c5a4471a5dc" name="Changes" comment="Small fixes." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -166,7 +159,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666644085695</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="The small projects (CaesarCipher and Substrings) are now into correct packages.">
+      <created>1667226352526</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667226352526</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Small fixes.">
+      <created>1667226512675</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667226512675</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,7 +194,8 @@
     <MESSAGE value="Removed unnecessary if statements, now the code is cleaner without losing functionality." />
     <MESSAGE value="Added a class called CaesarCipherDecryptor.java which is coded to decrypt already encrypted text by the CaesarCipherEncryptor.java" />
     <MESSAGE value="The small projects (CaesarCipher and Substrings) are now into correct packages." />
-    <option name="LAST_COMMIT_MESSAGE" value="The small projects (CaesarCipher and Substrings) are now into correct packages." />
+    <MESSAGE value="Small fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Small fixes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
