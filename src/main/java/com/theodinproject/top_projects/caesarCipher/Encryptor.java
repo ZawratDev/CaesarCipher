@@ -1,23 +1,21 @@
 package com.theodinproject.top_projects.caesarCipher;
-
+import static com.theodinproject.top_projects.caesarCipher.CipherDictionary.ALPHABET;
+import static com.theodinproject.top_projects.caesarCipher.CipherDictionary.CAPITALIZED_ALPHABET;
 
 public class Encryptor {
 
+    static int alphabetOriginLetterIndex;
+
+    static char nextLetter;
+
+    static char charFromOriginStringIndex;
+
     static void encrypt(String sentence) {
-
-        final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
-
-        final String CAPITALIZED_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
         int numOfChars = sentence.length();
 
         char[] textToArray = sentence.toCharArray();
 
-        int alphabetOriginLetterIndex;
-
-        char nextLetter;
-
-        char charFromOriginStringIndex;
 
         System.out.println("[LOG -> INFO]: User text length: " + sentence.length() + "\n");
 

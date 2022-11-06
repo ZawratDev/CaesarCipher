@@ -1,12 +1,9 @@
 package com.theodinproject.top_projects.caesarCipher;
 
-
 import java.util.Scanner;
 
 public class CaesarCipher {
     public static void main(String[] args) {
-
-        String userText;
 
         int choice;
 
@@ -22,7 +19,7 @@ public class CaesarCipher {
 
                 choice = scanner.nextInt();
 
-                scanner.nextLine(); // this is necessary to consume \n because .nextInt() don't do this.
+                scanner.nextLine(); // this is necessary to consume \n because .nextInt() doesn't do this.
 
                 switch (choice) {
 
@@ -40,9 +37,7 @@ public class CaesarCipher {
 
                         System.out.println("Please provide a text to encrypt: ");
 
-                        userText = scanner.nextLine();
-
-                        Encryptor.encrypt(userText);
+                        Encryptor.encrypt(scanner.nextLine());
                     }
 
                     case 2 -> {
@@ -51,9 +46,8 @@ public class CaesarCipher {
 
                         System.out.println("Please provide a text to decrypt: ");
 
-                        userText = scanner.nextLine();
 
-                        Decryptor.decrypt(userText);
+                        Decryptor.decrypt(scanner.nextLine());
                     }
 
                     default -> System.out.println("Choose a correct program.\n");

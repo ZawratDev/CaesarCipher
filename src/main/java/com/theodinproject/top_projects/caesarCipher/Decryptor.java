@@ -1,13 +1,10 @@
 package com.theodinproject.top_projects.caesarCipher;
-
+import static com.theodinproject.top_projects.caesarCipher.CipherDictionary.ALPHABET;
+import static com.theodinproject.top_projects.caesarCipher.CipherDictionary.CAPITALIZED_ALPHABET;
 
 public class Decryptor {
 
     static void decrypt(String sentence) {
-
-        final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
-
-        final String CAPITALIZED_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
         int numOfChars = sentence.length();
 
