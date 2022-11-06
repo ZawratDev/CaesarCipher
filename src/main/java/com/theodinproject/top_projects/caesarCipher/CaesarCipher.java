@@ -15,7 +15,7 @@ public class CaesarCipher {
 
             try {
 
-                System.out.println("Please choose a mode: 1 to encrypt or 2 to decrypt: ");
+                System.out.println("Please choose an action: 1 to encrypt or 0 to exit: ");
 
                 choice = scanner.nextInt();
 
@@ -47,7 +47,7 @@ public class CaesarCipher {
 
             catch (Exception e) {
 
-                System.out.println("Something went wrong.");
+                System.out.println("Something went wrong. Exiting...");
 
                 System.exit(1);
 

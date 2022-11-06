@@ -3,22 +3,24 @@ import java.util.Scanner;
 
 public class Encryptor {
 
+    Encryptor() {
+
+        System.out.println("[LOG -> INFO]: Building encryptor... \n");
+
+    }
+
     static char charFromOriginStringIndex;
 
+    static Scanner scanner = new Scanner(System.in);
 
-    static char[] encrypt(String sentence) {
 
-        Scanner scanner = new Scanner(System.in);
+    static char[] encrypt(String sentence, int shiftNumber) {
+
+        System.out.println("[LOG -> INFO]: Running encryptor... \n");
 
         int numOfChars = sentence.length();
 
         char[] textToArray = sentence.toCharArray();
-
-        System.out.println("Running encryptor... \n");
-
-        System.out.println("Please provide a shift number: ");
-
-        int shiftNumber = scanner.nextInt();
 
         System.out.println("[LOG -> INFO]: User text length: " + sentence.length() + "\n");
         System.out.println("[LOG -> INFO]: User shift number: " + shiftNumber + "\n");
@@ -38,4 +40,14 @@ public class Encryptor {
         System.out.println(textToArray);
         return textToArray;
     }
+
+    static char[] encrypt(String sentence) {
+
+        System.out.println("[LOG -> INFO]: Running encryptor without a shift number... \n");
+
+        System.out.println("Please provide a shift number: ");
+
+        return encrypt(sentence, scanner.nextInt());
+    }
+
 }
