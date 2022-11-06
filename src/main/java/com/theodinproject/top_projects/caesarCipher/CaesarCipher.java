@@ -37,17 +37,8 @@ public class CaesarCipher {
 
                         System.out.println("Please provide a text to encrypt: ");
 
-                        Encryptor.encrypt(scanner.nextLine());
-                    }
+                        char[] outcomeText = Encryptor.encrypt(scanner.nextLine());
 
-                    case 2 -> {
-
-                        validator = true;
-
-                        System.out.println("Please provide a text to decrypt: ");
-
-
-                        Decryptor.decrypt(scanner.nextLine());
                     }
 
                     default -> System.out.println("Choose a correct program.\n");

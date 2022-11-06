@@ -1,23 +1,27 @@
 package com.theodinproject.top_projects.caesarCipher;
-import static com.theodinproject.top_projects.caesarCipher.CipherDictionary.ALPHABET;
-import static com.theodinproject.top_projects.caesarCipher.CipherDictionary.CAPITALIZED_ALPHABET;
+import java.util.Scanner;
 
 public class Encryptor {
 
-    static int alphabetOriginLetterIndex;
-
-    static char nextLetter;
-
     static char charFromOriginStringIndex;
 
-    static void encrypt(String sentence) {
+
+    static char[] encrypt(String sentence) {
+
+        Scanner scanner = new Scanner(System.in);
 
         int numOfChars = sentence.length();
 
         char[] textToArray = sentence.toCharArray();
 
+        System.out.println("Running encryptor... \n");
+
+        System.out.println("Please provide a shift number: ");
+
+        int shiftNumber = scanner.nextInt();
 
         System.out.println("[LOG -> INFO]: User text length: " + sentence.length() + "\n");
+        System.out.println("[LOG -> INFO]: User shift number: " + shiftNumber + "\n");
 
         for (int i = 0; i < numOfChars; i++) {
 
@@ -27,73 +31,11 @@ public class Encryptor {
 
             System.out.println("[LOG -> INFO]: charFromOriginStringIndex = " + charFromOriginStringIndex + "\n");
 
-            switch (charFromOriginStringIndex) {
-
-                case 'a' -> {
-                    nextLetter = ALPHABET.charAt(23);
-                    textToArray[i] = nextLetter;
-                }
-
-                case 'A' -> {
-                    nextLetter = CAPITALIZED_ALPHABET.charAt(23);
-                    textToArray[i] = nextLetter;
-                }
-
-                case 'b' -> {
-                    nextLetter = ALPHABET.charAt(24);
-                    textToArray[i] = nextLetter;
-                }
-
-                case 'B' -> {
-                    nextLetter = CAPITALIZED_ALPHABET.charAt(24);
-                    textToArray[i] = nextLetter;
-                }
-
-                case 'c' -> {
-                    nextLetter = ALPHABET.charAt(25);
-                    textToArray[i] = nextLetter;
-                }
-
-                case 'C' -> {
-                    nextLetter = CAPITALIZED_ALPHABET.charAt(25);
-                    textToArray[i] = nextLetter;
-                }
-
-                default -> {
-
-                    if (Character.isUpperCase(charFromOriginStringIndex)) {
-
-                        alphabetOriginLetterIndex = CAPITALIZED_ALPHABET.indexOf(charFromOriginStringIndex);
-
-                        System.out.println("[LOG -> INFO]: Capitalized_alphabetOriginLetterIndex = " + alphabetOriginLetterIndex + "\n");
-
-                        nextLetter = CAPITALIZED_ALPHABET.charAt(alphabetOriginLetterIndex - 3);
-
-                    } else if (ALPHABET.indexOf(charFromOriginStringIndex) != -1) {
-
-                        alphabetOriginLetterIndex = ALPHABET.indexOf(charFromOriginStringIndex);
-
-                        System.out.println("[LOG -> INFO]: alphabetOriginLetterIndex = " + alphabetOriginLetterIndex + "\n");
-
-                        nextLetter = ALPHABET.charAt(alphabetOriginLetterIndex - 3);
-
-                    } else {
-
-                        System.out.println("[LOG -> WARN]: Special characters will not be encrypted!");
-
-                        break;
-
-                    }
-
-                    textToArray[i] = nextLetter;
-
-                }
-            }
-
-            System.out.println("Encrypted text: ");
-
-            System.out.println(textToArray);
+            textToArray[i] = Shifter.shiftCharacter(charFromOriginStringIndex, shiftNumber);
 
         }
+        System.out.println("[LOG -> INFO]: Encrypted text: ");
+        System.out.println(textToArray);
+        return textToArray;
     }
 }
