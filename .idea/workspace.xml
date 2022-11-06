@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93abebbb-b891-4b7f-bc15-7c5a4471a5dc" name="Changes" comment="Encryptor.java is now both encryptor and decryptor. It can encrypt/decrypt sentence based on user input indicating a shift number. CipherDictionary.java has been created to hold on final static variables. Shifter.java has been added which is shifting every character provided.">
+    <list default="true" id="93abebbb-b891-4b7f-bc15-7c5a4471a5dc" name="Changes" comment="An overloaded method Encryptor.encrypt has been created. You can call the method with the sentence only or with the sentence and the shift number.&#10;Upgraded some logs.&#10;Removed an option 2 in the main function.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/caesarCipher/CaesarCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/caesarCipher/CaesarCipher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/caesarCipher/Encryptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/theodinproject/top_projects/caesarCipher/Encryptor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667768569691</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="An overloaded method Encryptor.encrypt has been created. You can call the method with the sentence only or with the sentence and the shift number.&#10;Upgraded some logs.&#10;Removed an option 2 in the main function.">
+      <created>1667769740113</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1667769740113</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,7 +230,8 @@
     <MESSAGE value="The small projects (CaesarCipher and Substrings) are now into correct packages." />
     <MESSAGE value="Small fixes." />
     <MESSAGE value="Encryptor.java is now both encryptor and decryptor. It can encrypt/decrypt sentence based on user input indicating a shift number. CipherDictionary.java has been created to hold on final static variables. Shifter.java has been added which is shifting every character provided." />
-    <option name="LAST_COMMIT_MESSAGE" value="Encryptor.java is now both encryptor and decryptor. It can encrypt/decrypt sentence based on user input indicating a shift number. CipherDictionary.java has been created to hold on final static variables. Shifter.java has been added which is shifting every character provided." />
+    <MESSAGE value="An overloaded method Encryptor.encrypt has been created. You can call the method with the sentence only or with the sentence and the shift number.&#10;Upgraded some logs.&#10;Removed an option 2 in the main function." />
+    <option name="LAST_COMMIT_MESSAGE" value="An overloaded method Encryptor.encrypt has been created. You can call the method with the sentence only or with the sentence and the shift number.&#10;Upgraded some logs.&#10;Removed an option 2 in the main function." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

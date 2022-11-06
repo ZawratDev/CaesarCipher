@@ -47,7 +47,18 @@ public class Encryptor {
 
         System.out.println("Please provide a shift number: ");
 
-        return encrypt(sentence, scanner.nextInt());
-    }
+        try {
 
+            return encrypt(sentence, scanner.nextInt());
+
+        }
+
+        catch (Exception e) {
+
+            System.out.println("Wrong number has been provided. Default shift number will be -3.");
+
+            return encrypt(sentence, -3);
+
+        }
+    }
 }
